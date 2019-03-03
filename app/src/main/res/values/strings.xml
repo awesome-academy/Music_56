@@ -19,6 +19,8 @@
     <string name="text_search_history">SEARCH HISTORY</string>
     <string name="downloaded_songs">Downloaded Songs</string>
     <string name="text_permission">YOU SHOULD ACCEPT PERMISSION FOR THIS FEATURE!</string>
+    <string name="text_playing">Playing </string>
+    <string name="text_song"> song</string>
     <array name="array_genre_titles">
         <item>@string/text_all_music</item>
         <item>@string/text_all_audio</item>

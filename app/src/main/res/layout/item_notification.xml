@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_background_purple_light">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layout_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image_artwork_notify"
+                android:layout_width="@dimen/width_74dp"
+                android:layout_height="@dimen/width_74dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_artwork_item_default" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="11"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_song_name_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_4dp"
+                android:ellipsize="end"
+                android:maxLength="26"
+                android:maxLines="1"
+                android:text="@string/text_song_name"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/text_artist_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_song_name_notify"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_4dp"
+                android:ellipsize="end"
+                android:maxLength="26"
+                android:maxLines="1"
+                android:text="@string/text_artist"
+                android:textSize="@dimen/text_size_14" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_artist_notify"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_4dp">
+
+                <ImageView
+                    android:id="@+id/image_skip_previous_notify"
+                    android:layout_width="@dimen/width_32"
+                    android:layout_height="@dimen/width_32"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_8"
+                    android:src="@drawable/ic_skip_previous_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/image_play_pause_notify"
+                    android:layout_width="@dimen/width_32"
+                    android:layout_height="@dimen/width_32"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toStartOf="@+id/image_skip_next_notify"
+                    android:layout_toLeftOf="@+id/image_skip_next_notify"
+                    android:layout_toEndOf="@+id/image_skip_previous_notify"
+                    android:layout_toRightOf="@+id/image_skip_previous_notify"
+                    android:src="@drawable/ic_pause_black_36dp" />
+
+                <ImageView
+                    android:id="@+id/image_skip_next_notify"
+                    android:layout_width="@dimen/width_32"
+                    android:layout_height="@dimen/width_32"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:layout_marginRight="@dimen/margin_8"
+                    android:src="@drawable/ic_skip_next_black_24dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
